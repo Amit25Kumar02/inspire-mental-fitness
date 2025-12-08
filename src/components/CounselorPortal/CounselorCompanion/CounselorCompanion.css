@@ -1,0 +1,18 @@
+.companion-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.companion-image {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+}
+
+.companion-image.active {
+  opacity: 1;
+}

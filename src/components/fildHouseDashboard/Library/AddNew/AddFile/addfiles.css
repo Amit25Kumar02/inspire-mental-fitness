@@ -1,0 +1,31 @@
+.dropzone-container {
+  border: 1.85px solid #e4e4e480 !important;
+  border-radius: 8px;
+  background-color: #eaecee;
+  cursor: pointer;
+}
+.btn-upload-file {
+  background-color: #009345;
+  border-color: #009345;
+  color: white;
+  border-radius: 14px;
+  width: 182px !important;
+  height: 51px;
+}
+
+.btn-upload-file:hover {
+  background-color: #009345 !important;
+  border-color: #009345 !important;
+}
+
+.btn-dropbox {
+  width: 153.35px;
+  height: 51.73px;
+  background: #00934580;
+  border-radius: 14.78px;
+  color: var(--clr-theme);
+}
+.btn-dropbox:hover {
+  background: #00934580 !important;
+  color: var(--clr-theme) !important;
+}

@@ -1,0 +1,133 @@
+.football-field-div {
+  background-image: url("/src/assets/image/png/footballField.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.soccer-machine {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Gloves follow cursor */
+.goal-keeper-gloves {
+  width: 220px;
+  height: auto;
+  transition: left 0.1s linear, top 0.1s linear;
+  z-index: 5;
+}
+
+/* Base football-ball properties */
+.football-ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 1; /* always visible */
+  transform: scale(0.3);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Left */
+.football-ball.left {
+  top: 45%;
+  left: -10%;
+  animation: fly-left 3.5s ease-out forwards;
+}
+@keyframes fly-left {
+  0% {
+    transform: scale(0.3) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(300px) translateY(50px);
+  }
+  100% {
+    transform: scale(3) translateX(650px) translateY(100px);
+  }
+}
+
+/* Right */
+.football-ball.right {
+  top: 45%;
+  left: 110%;
+  animation: fly-right 3.5s ease-out forwards;
+}
+@keyframes fly-right {
+  0% {
+    transform: scale(0.3) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(-300px) translateY(50px);
+  }
+  100% {
+    transform: scale(3) translateX(-650px) translateY(100px);
+  }
+}
+
+/* Top-left */
+.football-ball.top-left {
+  top: -20%;
+  left: 10%;
+  animation: fly-top-left 3.5s ease-out forwards;
+}
+@keyframes fly-top-left {
+  0% {
+    transform: scale(0.3) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(120px) translateY(180px);
+  }
+  100% {
+    transform: scale(3) translateX(250px) translateY(300px);
+  }
+}
+
+/* Top-right */
+.football-ball.top-right {
+  top: -30%;
+  left: 75%;
+  animation: fly-top-right 3.5s ease-out forwards;
+}
+@keyframes fly-top-right {
+  0% {
+    transform: scale(0.3) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(-120px) translateY(180px);
+  }
+  100% {
+    transform: scale(3) translateX(-250px) translateY(300px);
+  }
+}
+
+/* Top-center */
+.football-ball.top-center {
+  top: -25%;
+  left: 50%;
+  animation: fly-top-center 3.5s ease-out forwards;
+}
+@keyframes fly-top-center {
+  0% {
+    transform: scale(0.3) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(0) translateY(200px);
+  }
+  100% {
+    transform: scale(3) translateX(0) translateY(350px);
+  }
+}
+
+/* Start button centered */
+.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

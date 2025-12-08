@@ -1,0 +1,32 @@
+.btn-sessions-tab {
+  border: 0.92px solid #009345 !important;
+  color: var(--clr-theme) !important;
+  max-width: 184.75px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.btn-sessions-tab-active {
+  border: 0.92px solid var(--clr-theme);
+  color: #ffffff !important;
+  background-color: var(--clr-theme) !important;
+}
+
+.blue-dot {
+  min-width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #0071bd;
+}
+.green-dot {
+  min-width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #7fba7a;
+}
+.name-bg {
+  background-color: #adadad;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}

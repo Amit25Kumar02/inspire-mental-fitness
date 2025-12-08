@@ -1,0 +1,93 @@
+/* FULL DARK THEME WRAPPER */
+.faq-bg-theme {
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  padding: 78px 8%;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Soft Black Overlay */
+.faq-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Diagonal Texture */
+.faq-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-75deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 6px,
+      transparent 8px,
+      transparent 20px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content on top */
+.faq-bg-theme * {
+  position: relative;
+  z-index: 5;
+  color: #fff !important;
+}
+
+/* Main Heading Styling */
+.faq-bg-theme h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Accordion Section */
+.accordion-item {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(4px);
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  margin-bottom: 12px;
+}
+
+/* Accordion Header */
+.accordion-button {
+  background: transparent !important;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 14px 16px;
+}
+
+/* Remove default white expand icon */
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* When Active */
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: #f4f7fb;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+/* Hover effect */
+.accordion-button:hover {
+  /* color: #27c275 !important; */
+  transition: 0.3s ease-in-out;
+}
+
+/* Inner accordion */
+.accordion-body {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: #e4e4e4 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove weird bootstrap borders */
+.accordion {
+  --bs-accordion-border-color: transparent;
+}

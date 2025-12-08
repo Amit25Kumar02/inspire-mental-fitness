@@ -1,0 +1,162 @@
+/* AlbumSongs.css */
+
+.album-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.album-content {
+  flex: 2; /* Takes up most of the space */
+}
+
+.album-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.album-cover {
+  flex: 1;
+  max-width: 300px;
+}
+
+.album-cover img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.album-info {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.album-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.album-info p {
+  margin-top: 5px;
+  color: #777;
+}
+
+.song-list {
+  margin-top: 20px;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 16px;
+  color: #333;
+}
+
+.song-duration {
+  font-size: 14px;
+  color: #777;
+}
+
+/* All albums list styles */
+.all-albums {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.all-albums h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.albums-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.album-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.album-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.album-item p {
+  margin: 0;
+  color: #333;
+}
+
+.album-container .play-pause-btn {
+  background-color: transparent;
+  color: b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.album-container .play-pause-btn span {
+  z-index: 2;
+}
+
+.album-container .play-pause-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.album-container .play-pause-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .album-container {
+    flex-direction: column;
+  }
+
+  .album-content {
+    margin-bottom: 20px;
+  }
+
+  .album-cover {
+    max-width: 200px;
+  }
+}

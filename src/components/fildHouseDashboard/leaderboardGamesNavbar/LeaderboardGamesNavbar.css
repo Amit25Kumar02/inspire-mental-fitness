@@ -1,0 +1,93 @@
+/* Logo */
+.lg-logo {
+  z-index: 20;
+}
+
+.lg-logo-size {
+  width: 200px;
+  height: 62px;
+}
+
+/* Hamburger */
+.lg-hamburger-btn .lg-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+.lg-hamburger-active {
+  z-index: 99;
+}
+
+.lg-hamburger-active .lg-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.lg-hamburger-active .lg-bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.lg-hamburger-active .lg-bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.lg-nav-hidden {
+  top: 0;
+  right: -100%;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  background: #fff;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+.lg-nav-show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.4s ease-in-out;
+}
+
+.lg-nav-show li,
+.lg-nav-hidden li {
+  margin-bottom: 15px;
+}
+
+/* Responsive logo */
+@media (max-width: 992px) {
+  .lg-logo-size {
+    width: 180px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .lg-logo-size {
+    width: 180px;
+    position: relative;
+    z-index: 99;
+    height: auto;
+  }
+}
+
+/* Desktop & mobile links */
+.lg-link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 16px;
+}

@@ -1,0 +1,117 @@
+/* DARK SLAMMERS THEME */
+.pricing-bg-theme {
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  padding: 80px 8% !important;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Soft Black Overlay */
+.pricing-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Diagonal Texture */
+.pricing-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-75deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 6px,
+      transparent 8px,
+      transparent 20px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Always keep content above overlays */
+.pricing-bg-theme * {
+  position: relative;
+  z-index: 5;
+}
+
+/* Heading Lines */
+.horizontal-line {
+  width: 45px;
+  height: 3px;
+  background: #27c275;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Cards */
+.cards-pricing {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 22px;
+  backdrop-filter: blur(4px);
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.35s;
+}
+
+/* .cards-pricing:hover {
+  border: 1px solid #27c275;
+  background: rgba(39, 194, 117, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 35px rgba(0, 255, 140, 0.18);
+} */
+
+/* Plan Name */
+.cards-pricing p {
+  color: #fff !important;
+}
+
+/* Feature Icons */
+.black-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #27c275;
+}
+
+.white-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+
+
+/* Button Modern Look */
+.btn-green-common {
+  background: #27c275 !important;
+  border: none !important;
+  font-weight: 600;
+}
+
+.btn-green-common:hover {
+  background: #1fa565 !important;
+}
+
+/* Section Text */
+#Pricing p,
+#Pricing h2,
+#Pricing h3 {
+  color: #ffffff !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-pricing {
+    margin-bottom: 12px;
+  }
+}

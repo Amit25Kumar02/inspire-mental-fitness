@@ -1,0 +1,31 @@
+.btn-option {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-option.selected {
+  background-color: #009345 !important;
+  color: white;
+  border: 1px solid #009345 !important;
+}
+
+.disagree {
+  background: #1a71bd;
+}
+.disagree-somewhat {
+  background: #a5badb;
+}
+.agree {
+  background: #118c2a;
+}
+.agree-somewhat {
+  background: #9dc3a6;
+}
+.neutral {
+  background: #e1e7f0;
+}

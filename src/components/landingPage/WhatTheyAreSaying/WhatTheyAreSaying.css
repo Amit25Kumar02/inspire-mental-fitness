@@ -1,0 +1,22 @@
+.horizontal-line {
+  border: 1px solid var(--clr-black);
+  width: 80px;
+}
+.slider-card-horizontal-line {
+  border: 1px solid #00000040;
+}
+
+.prev-button {
+  border: 1px solid var(--clr-green) !important;
+  background-color: transparent !important;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.next-button {
+  border: 1px solid var(--clr-green) !important;
+  background-color: transparent !important;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}

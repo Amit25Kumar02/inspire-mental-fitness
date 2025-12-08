@@ -1,0 +1,80 @@
+.tryinspire-wrapper {
+  position: relative;
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  overflow: hidden;
+  padding: 95px 8% !important;
+}
+
+
+.tryinspire-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.tryinspire-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 6px,
+    transparent 8px,
+    transparent 20px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+.tryinspire-wrapper * {
+  position: relative;
+  z-index: 5;
+}
+
+
+.tryinspire-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+
+.tryinspire-card p {
+  color: #ffffff !important;
+  opacity: 0.95;
+}
+
+
+.discovery-test-button {
+  background-color: #27c275 !important;
+  border: none !important;
+  padding-right: 44px !important;
+  border-radius: 30px;
+}
+
+.discovery-test-button::after {
+  content: none !important;
+}
+
+
+.bg-white-pointer {
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.bg-white-pointer img {
+  width: 16px;
+}

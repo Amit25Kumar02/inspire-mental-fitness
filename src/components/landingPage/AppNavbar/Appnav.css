@@ -1,0 +1,138 @@
+.logo-index {
+  z-index: 20;
+}
+
+.logo-size {
+  width: 200px;
+  height: 62px;
+}
+
+.app-navbar-bg-theme {
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  color: #fff;
+  padding: 20px 8% !important;
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1000;
+}
+
+
+.app-navbar-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(0, 0, 0, 0.35); */
+  z-index: 1;
+}
+
+
+.app-navbar-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-75deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 6px,
+      transparent 8px,
+      transparent 20px);
+  z-index: 1;
+}
+.color_black4-1{
+  color: #fbfbfb !important;
+  z-index: 1000 !important;
+  cursor: pointer !important;
+}
+
+
+.app-navbar-bg-theme::before,
+.app-navbar-bg-theme::after {
+  pointer-events: none !important;
+}
+
+
+.app-navbar-bg-theme * {
+  position: relative;
+  z-index: 5 !important;
+}
+
+
+@media (max-width: 992px) {
+  .nav-hidden {
+    top: 0;
+    right: -100%;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background: #fff;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-show {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.4s ease-in-out;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    z-index: 10;
+    border-radius: 5px;
+  }
+
+  .hamburger-2 {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hamburger-2 .bar:nth-child(2) {
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .hamburger-2 .bar:nth-child(1) {
+    transform: translateY(9px) rotate(46deg);
+    z-index: 10;
+  }
+
+  .hamburger-2 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    z-index: 10;
+  }
+
+  .choose-us-data {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-size {
+    width: 150px;
+    height: unset;
+  }
+}

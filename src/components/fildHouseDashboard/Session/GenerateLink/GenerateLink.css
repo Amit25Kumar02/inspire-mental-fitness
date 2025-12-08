@@ -1,0 +1,38 @@
+.generate-link-css {
+  border: 1.85px solid #e4e4e480;
+  border-radius: 14.78px;
+}
+
+.btn-invite {
+  border: 1px solid var(--clr-theme) !important;
+  width: 113px !important;
+  height: 44px !important;
+}
+.btn-copy {
+  border: 1px solid var(--clr-theme) !important;
+  width: 105px;
+  height: 44px;
+}
+
+.call-test-bg {
+  background-image: url("../../../../assets/image/png/callTestBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1.85px solid #e4e4e480;
+  border-radius: 15px;
+}
+
+.call-icon-bg {
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+}
+
+.select-time-box {
+  border: 1px solid #0071bd !important;
+}
+.select-time-box:hover {
+  background-color: var(--clr-theme) !important;
+  border: 1px solid var(--clr-theme) !important;
+  color: white !important;
+}

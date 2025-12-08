@@ -1,0 +1,76 @@
+/* FOOTER DARK THEME */
+.footer-bg-theme {
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  color: #fff;
+  padding: 71px 8% !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft Overlay */
+.footer-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Diagonal Texture */
+.footer-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 6px,
+    transparent 8px,
+    transparent 20px
+  );
+  z-index: 1;
+}
+
+.footer-bg-theme * {
+  position: relative;
+  z-index: 3;
+  color: #fff !important;
+}
+
+/* Footer Links */
+.footer-bg-theme a {
+  color: #e1e1e1 !important;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+
+.footer-bg-theme a:hover {
+  color: #27c275 !important;
+  padding-left: 4px;
+}
+
+/* Section Header Text */
+.list-section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff !important;
+  margin-bottom: 14px;
+}
+
+/* Footer bottom opacity for description */
+.footer-description {
+  opacity: 0.85 !important;
+}
+
+/* Divider style for consistency */
+.horizontal-line {
+  width: 45px;
+  height: 3px;
+  background: #27c275;
+  border-radius: 10px;
+}
+
+/* Remove Antd list border */
+.ant-list-item {
+  border: none !important;
+}

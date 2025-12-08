@@ -1,0 +1,80 @@
+.hr-line {
+  height: 3px;
+  width: 45px;
+  background-color: #27c275;
+  border-radius: 6px;
+}
+
+.elevate-text {
+  color: #bdbdbd !important;
+}
+
+.aboutus-bg-theme {
+  position: relative;
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  padding: 92px 8% !important;
+  height: auto;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Soft Black Overlay */
+.aboutus-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Diagonal Texture */
+.aboutus-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-75deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 6px,
+      transparent 8px,
+      transparent 20px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content above overlays */
+.aboutus-bg-theme * {
+  position: relative;
+  z-index: 4;
+}
+
+/* Fix paragraph visibility */
+#aboutus p {
+  color: #e3e3e3 !important;
+}
+
+/* Remove blue/green blocks from image */
+.text-center img {
+  filter: brightness(0.8) contrast(120%);
+}
+
+/* Style the About Us label like Hero style */
+.bg-white {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.bg-white p {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.about-text {
+  color: #e0e0e0 !important;
+  opacity: 0.95;
+}
+
+.about-img-shadow {
+  filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.6));
+}

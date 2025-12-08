@@ -1,0 +1,55 @@
+.benefit-card,
+.strategy-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.benefit-card:hover,
+.strategy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-color: #0071bd;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.personal-best-score-div {
+  top: 2%;
+  left: 2%;
+  background-color: rgba(40, 39, 39, 0.24);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.reaction-leaderboard table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.reaction-leaderboard th,
+.reaction-leaderboard td {
+  vertical-align: middle;
+  border: none !important;
+}
+
+.reaction-leaderboard thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.reaction-leaderboard thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.reaction-leaderboard tr:hover {
+  background-color: #dff7ea !important;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}

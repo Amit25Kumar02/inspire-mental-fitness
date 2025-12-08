@@ -1,0 +1,165 @@
+.slammers-hero-wrapper {
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 600px;
+    background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+    overflow: hidden;
+    gap: 200px;
+    color: #fff;
+}
+
+.slammers-hero-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.slammers-hero-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(-75deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 6px,
+            transparent 8px,
+            transparent 20px);
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+/* .slammers-hero-wrapper::before {
+    content: "";
+    background: url("../../../assets/image/png/slammers-watermark.png") center/450px no-repeat;
+    position: absolute;
+    left: 48%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    opacity: 0.09;
+    z-index: 0;
+} */
+
+
+.text-content,
+.image-section {
+    position: relative;
+    z-index: 5;
+}
+
+.slammers-logo {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 6;
+}
+
+.slammers-logo-text {
+    width: 280px;
+    height: auto;
+    position: relative;
+    z-index: 6;
+    display: block;
+}
+
+
+.slammer-title {
+    font-size: 78px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 72px;
+    font-weight: 700;
+    opacity: 0.65;
+    margin: 0px 0 60px;
+    background: linear-gradient(270deg, #009345 72.08%, #0071bd 88.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.logo-sec {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.powered-label {
+    font-size: 20px;
+    opacity: 0.85;
+    margin-left: 6px;
+}
+
+.inspire-logo-text {
+    height: 50px;
+}
+
+
+.platform-kickoff {
+    font-size: 32px;
+    margin-left: 30px;
+    font-weight: 700;
+    letter-spacing: 1 px;
+}
+
+.platform-kickoff-1 {
+    font-size: 32px;
+    margin-left: 40px;
+    font-weight: 700;
+    letter-spacing: 1 px;
+}
+
+.image-section {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    z-index: 2;
+}
+
+.image-section::before,
+.image-section::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background: rgba(70, 70, 70, 0.85);
+    border-radius: 30px;
+    left: 100px;
+    backdrop-filter: blur(2px);
+}
+
+.image-section::before {
+    top: 10px;
+}
+
+.image-section::after {
+    top: 165px;
+}
+
+/* .bg-box-third {
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background: rgba(70, 70, 70, 0.85);
+    border-radius: 30px;
+    left: 75px;
+    top: 320px;
+} */
+
+
+.player-silhouette {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    height: 520px;
+    filter: brightness(0.6) contrast(150%);
+    z-index: 3;
+}

@@ -1,0 +1,9 @@
+td,
+th {
+  background: transparent !important;
+}
+
+.privacy-plans-section p,
+.privacy-plans-section li {
+  font-size: 18px;
+}

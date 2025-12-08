@@ -1,0 +1,99 @@
+/* Full Section Dark Theme Like Slammers Hero */
+.blogs-bg-theme {
+  position: relative;
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  padding: 89px 8% !important;
+  overflow: hidden;
+  color: #fff !important;
+}
+
+/* Soft Black Overlay */
+.blogs-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Diagonal premium texture */
+.blogs-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 6px,
+    transparent 8px,
+    transparent 20px
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content stays on top */
+.blogs-bg-theme * {
+  position: relative;
+  z-index: 5;
+}
+
+/* Fix heading styling */
+.horizontal-line {
+  border: none;
+  height: 3px;
+  width: 45px;
+  background: #27c275;
+  border-radius: 6px;
+}
+
+/* Cards */
+.height-363 {
+  max-height: 363px;
+}
+
+.blogs-images {
+  height: 220px;
+}
+
+/* Images */
+.image-positions {
+  object-position: top;
+}
+.image-border-radius {
+  border-radius: 20px;
+}
+
+/* Dark gradient layer inside cards */
+.linear-layer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.0) 20%,
+    rgba(0, 0, 0, 0.7) 85%
+  );
+  border-radius: inherit;
+}
+
+/* White text fix */
+#Blog p,
+#Blog h2,
+#Blog h4 {
+  color: #ffffff !important;
+}
+
+/* Hover Glow */
+.blogs-images:hover img {
+  filter: brightness(1.1);
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 50%;
+}

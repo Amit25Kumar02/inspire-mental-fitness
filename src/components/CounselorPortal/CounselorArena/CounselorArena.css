@@ -1,0 +1,12 @@
+.box-img-arena {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40%;
+  max-width: 1400px;
+}
+
+@media (max-width: 575px) {
+  .box-img-arena {
+    max-width: 800px;
+  }
+}

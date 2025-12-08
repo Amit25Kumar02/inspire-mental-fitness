@@ -1,0 +1,40 @@
+.navmanu {
+  width: 30px;
+}
+
+.navdot {
+  border: 2px solid #37393a;
+  background-color: #37393a;
+}
+
+.custom_input {
+  max-width: 502px !important;
+  border: 0.6px solid #d5d5d5;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+}
+
+.custom_input input {
+  background-color: transparent !important;
+  border: 0;
+  outline: none;
+}
+
+.bg_image {
+  background-image: url(../../assets/image/png/basboard_box_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.light_blue {
+  background-color: #f4f8fa !important;
+}
+
+.white-dot {
+  min-width: 3.67px;
+  width: 4px;
+  height: 3.67px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}

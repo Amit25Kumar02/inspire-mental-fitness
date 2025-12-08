@@ -1,0 +1,94 @@
+/* Background Theme Same as Slammers Hero */
+.features-bg-theme {
+  position: relative;
+  background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
+  padding: 80px 8% !important;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Black Overlay */
+.features-bg-theme::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Texture Lines */
+.features-bg-theme::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 6px,
+    transparent 8px,
+    transparent 20px
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content above overlays */
+.features-bg-theme * {
+  position: relative;
+  z-index: 5;
+}
+
+/* Heading Divider Line */
+.horizontal-line {
+  border: none;
+  height: 3px;
+  width: 45px;
+  background: #27c275;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+
+/* Card Style */
+.feature-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #27c275;
+  transform: translateY(-6px);
+}
+
+/* Circular Icon Holder */
+.card-image-circle {
+  width: 75px;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.feature-card:hover .card-image-circle {
+  background: #27c275;
+  border-color: #27c275;
+}
+
+/* Icon */
+.card-image {
+  width: 52px;
+  height: 52px;
+}
+
+/* Subtitle */
+p {
+  color: #ccc !important;
+}

@@ -1,0 +1,13 @@
+.btn-sessions-tab-coach {
+  border: 0.92px solid var(--clr-blue) !important;
+  color: var(--clr-blue) !important;
+  max-width: 184.75px;
+  height: 44px;
+  background-color: transparent;
+}
+
+.btn-sessions-tab-active-coach {
+  border: 0.92px solid var(--clr-blue) !important;
+  color: #ffffff !important;
+  background-color: var(--clr-blue) !important;
+}

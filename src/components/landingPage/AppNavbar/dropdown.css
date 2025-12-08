@@ -1,0 +1,245 @@
+.language-dropdown-container {
+  margin-left: 15px;
+  position: relative;
+  z-index: 200;
+}
+
+.language-toggle {
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+  background-color: transparent !important;
+  border: 1px solid #e0e0e0 !important;
+  color: #404040 !important;
+  font-weight: 500;
+  min-width: 50px;
+  text-align: center;
+  z-index: 200;
+}
+
+.language-toggle:hover,
+.language-toggle:focus,
+.language-toggle:active {
+  background-color: #f8f9fa !important;
+  border-color: #ddd !important;
+  box-shadow: none !important;
+}
+
+/* Loading state */
+.language-spinner {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-width: 0.15em !important;
+  vertical-align: middle;
+}
+
+/* Error state */
+.language-toggle-error {
+  border-color: #ffcccc !important;
+}
+
+.language-toggle-error:hover {
+  background-color: #010101 !important;
+}
+
+.language-error-message {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ffcccc;
+  color: #dc3545;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  z-index: 1000;
+  max-width: 200px;
+  white-space: normal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.language-fullscreen-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-dropdown-container:hover .language-error-message {
+  display: block;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  min-width: 5rem !important;
+}
+
+.dropdown-item {
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+}
+
+.dropdown-item.active {
+  background-color: #f0f0f0;
+  color: #404040;
+}
+
+/* Animation for translated content */
+.translating {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Prevent translation of specific elements */
+[data-no-translate] {
+  /* Ensure these elements aren't affected */
+}
+
+/* Custom styles for translatable elements */
+[data-original-text] {
+  /* Add visual indicator if needed */
+}
+
+/* Fix potential styling issues with translated content */
+body.translating [data-original-text] {
+  min-height: 1em; /* Prevent collapse during translation */
+}
+.language-dropdown-container {
+  margin-left: 15px;
+}
+
+.language-toggle {
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+  background-color: transparent !important;
+  border: 1px solid #e0e0e0 !important;
+  color: #404040 !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.language-toggle:hover,
+.language-toggle:focus,
+.language-toggle:active {
+  background-color: #0a0a0a !important;
+  border-color: #ddd !important;
+  box-shadow: none !important;
+}
+
+/* Loading state */
+.language-spinner {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-width: 0.15em !important;
+  vertical-align: middle;
+}
+
+/* Error state */
+.language-toggle-error {
+  border-color: #ffcccc !important;
+}
+
+.language-toggle-error:hover {
+  background-color: #fff0f0 !important;
+}
+
+.language-error-message {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ffcccc;
+  color: #dc3545;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  z-index: 1000;
+  max-width: 200px;
+  white-space: normal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.language-dropdown-container:hover .language-error-message {
+  display: block;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  min-width: 6rem !important;
+  padding: 0.25rem;
+}
+
+.language-dropdown-item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.language-name {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.dropdown-item.active {
+  background-color: #f0f0f0;
+  color: #404040;
+}
+
+/* Make sure flags render correctly */
+.dropdown-item img,
+.language-toggle img {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Animation for translated content */
+.translating {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Dashboard integration styles */
+.field-dashboard-sidebar .language-dropdown-container {
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.field-dashboard-sidebar .language-toggle {
+  min-width: 40px;
+  height: 36px;
+  padding: 0;
+}
+
+/* Ensure dropdown menu displays correctly */
+.field-dashboard-sidebar .dropdown-menu {
+  transform: translateX(-50%);
+  left: 50%;
+  min-width: 8rem !important;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+  .language-dropdown-container {
+    margin-bottom: 0;
+  }
+
+  .language-name {
+    display: inline-block;
+  }
+}
