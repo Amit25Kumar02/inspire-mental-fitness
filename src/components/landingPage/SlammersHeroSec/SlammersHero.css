@@ -1,13 +1,13 @@
 .slammers-hero-wrapper {
     display: flex;
     position: relative;
-    /* justify-content: space-between; */
     align-items: center;
-    padding: 80px 8%;
+    /* padding: 4% 8%; */
     min-height: 600px;
     background: linear-gradient(115deg, #000 35%, #1d1d1d 100%);
     overflow: hidden;
-    gap: 200px;
+    /* border: 1px solid red; */
+    /* gap: 200px; */
     color: #fff;
 }
 
@@ -33,44 +33,38 @@
     pointer-events: none;
 }
 
-
-/* .slammers-hero-wrapper::before {
-    content: "";
-    background: url("../../../assets/image/png/slammers-watermark.png") center/450px no-repeat;
-    position: absolute;
-    left: 48%;
-    top: 52%;
-    transform: translate(-50%, -50%);
-    opacity: 0.09;
-    z-index: 0;
-} */
-
-
 .text-content,
 .image-section {
     position: relative;
+    /* border: 1px solid red; */
     z-index: 5;
 }
 
 .slammers-logo {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
     z-index: 6;
+    /* border: 1px solid red; */
 }
 
 .slammers-logo-text {
     width: 280px;
+    /* margin-left: -60px; */
+    /* border: 1px solid red; */
     height: auto;
     position: relative;
     z-index: 6;
     display: block;
 }
 
-
 .slammer-title {
     font-size: 78px;
     font-weight: 700;
     margin: 0;
+    line-height: 1;
 }
 
 .sub-title {
@@ -83,6 +77,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    line-height: 1;
 }
 
 .logo-sec {
@@ -90,38 +85,61 @@
     display: flex;
     align-items: center;
     gap: 90px;
+    /* border: 1px solid red; */
+    /* flex-wrap: wrap; */
+}
+
+.powered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .powered-label {
     font-size: 20px;
     opacity: 0.85;
-    margin-left: 6px;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .inspire-logo-text {
     height: 50px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 
 .platform-kickoff {
     font-size: 32px;
-    margin-left: 30px;
     font-weight: 700;
-    letter-spacing: 1 px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .platform-kickoff-1 {
     font-size: 32px;
-    margin-left: 40px;
     font-weight: 700;
-    letter-spacing: 1 px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
+/* RIGHT IMAGE SECTION */
 .image-section {
     position: relative;
-    width: 360px;
+    width: 400px;
     height: 520px;
+    /* border: 1px solid red; */
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .image-section::before,
@@ -130,7 +148,6 @@
     position: absolute;
     width: 200px;
     height: 130px;
-    background: rgba(70, 70, 70, 0.85);
     border-radius: 30px;
     left: 100px;
     backdrop-filter: blur(2px);
@@ -144,22 +161,361 @@
     top: 165px;
 }
 
-/* .bg-box-third {
-    position: absolute;
-    width: 200px;
-    height: 130px;
-    background: rgba(70, 70, 70, 0.85);
-    border-radius: 30px;
-    left: 75px;
-    top: 320px;
-} */
-
-
 .player-silhouette {
     position: absolute;
     bottom: 0;
-    right: -20px;
     height: 520px;
     filter: brightness(0.6) contrast(150%);
     z-index: 3;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1400px) {
+    .slammers-hero-wrapper {
+        gap: 100px;
+        padding: 4% 12%;
+    }
+
+    .slammers-logo-text{
+        margin-left: -60px;
+    }
+}
+
+/* Laptop Screens */
+@media (max-width: 1200px) {
+    .slammers-hero-wrapper {
+        gap: 60px;
+        padding: 20px 6%;
+    }
+
+    /* .slammers-logo-text {
+        margin-left: -60px;
+    } */
+
+    .player-silhouette {
+        height: 450px;
+    }
+
+    .platform-kickoff {
+        font-size: 28px;
+    }
+
+    .platform-kickoff-1 {
+        font-size: 28px;
+    }
+
+    .image-section {
+        width: 320px;
+        height: 450px;
+    }
+
+    .slammer-title {
+        font-size: 68px;
+    }
+
+    .sub-title {
+        font-size: 62px;
+        margin-bottom: 50px;
+    }
+
+    .logo-sec {
+        gap: 30px;
+    }
+}
+
+/* Tablet Landscape */
+@media (max-width: 992px) {
+    .slammers-hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 50px;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .logo-sec {
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .powered-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .welcome-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-section {
+        width: 320px;
+        height: 480px;
+        margin: 0 auto;
+    }
+
+    .platform-kickoff,
+    .platform-kickoff-1 {
+        text-align: center;
+    }
+
+    .slammer-title {
+        font-size: 60px;
+    }
+
+    .sub-title {
+        font-size: 54px;
+        margin-bottom: 40px;
+    }
+
+    .slammers-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slammers-logo-text {
+        width: 240px;
+    }
+}
+
+/* Tablet Portrait & Large Mobile */
+@media (max-width: 768px) {
+    .slammer-title {
+        font-size: 48px;
+    }
+
+    .sub-title {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .player-silhouette {
+        height: 400px;
+        position: relative;
+    }
+
+    .image-section {
+        width: 280px;
+        height: 420px;
+    }
+
+    .image-section::before,
+    .image-section::after {
+        width: 150px;
+        height: 100px;
+        left: 65px;
+    }
+
+    .image-section::after {
+        top: 130px;
+    }
+
+    .platform-kickoff,
+    .platform-kickoff-1 {
+        font-size: 28px;
+    }
+
+    .inspire-logo-text {
+        height: 45px;
+    }
+
+    .slammers-logo-text {
+        width: 220px;
+    }
+
+    .powered-label {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+    .slammers-hero-wrapper {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .slammer-title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .logo-sec {
+        gap: 30px;
+        width: 100%;
+    }
+
+    .powered-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .powered-label {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .inspire-logo-text {
+        height: 40px;
+    }
+
+    .welcome-section {
+        width: 100%;
+    }
+
+    .platform-kickoff,
+    .platform-kickoff-1 {
+        font-size: 24px;
+        letter-spacing: 0.8px;
+    }
+
+    .image-section {
+        width: 250px;
+        height: 380px;
+    }
+
+    .player-silhouette {
+        height: 380px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .image-section::before,
+    .image-section::after {
+        width: 130px;
+        height: 85px;
+        left: 60px;
+        border-radius: 20px;
+    }
+
+    .image-section::after {
+        top: 110px;
+    }
+
+    .slammers-logo-text {
+        width: 200px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 375px) {
+    .slammer-title {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
+
+    .platform-kickoff,
+    .platform-kickoff-1 {
+        font-size: 22px;
+    }
+
+    .image-section {
+        width: 220px;
+        height: 340px;
+    }
+
+    .player-silhouette {
+        height: 340px;
+    }
+
+    .image-section::before,
+    .image-section::after {
+        width: 110px;
+        height: 70px;
+        left: 55px;
+    }
+
+    .image-section::after {
+        top: 95px;
+    }
+
+    .slammers-logo-text {
+        width: 180px;
+    }
+
+    .inspire-logo-text {
+        height: 35px;
+    }
+
+    .powered-label {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 320px) {
+    .slammers-hero-wrapper {
+        padding: 30px 15px;
+    }
+
+    .slammer-title {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .platform-kickoff,
+    .platform-kickoff-1 {
+        font-size: 20px;
+    }
+
+    .image-section {
+        width: 200px;
+        height: 300px;
+    }
+
+    .player-silhouette {
+        height: 300px;
+    }
+
+    .image-section::before,
+    .image-section::after {
+        display: none;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .slammers-hero-wrapper {
+        min-height: 400px;
+        padding: 30px 5%;
+        gap: 30px;
+    }
+
+    .slammers-logo-text {
+        width: 180px;
+    }
+
+    .slammer-title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .image-section {
+        width: 200px;
+        height: 300px;
+    }
+
+    .player-silhouette {
+        height: 300px;
+    }
 }

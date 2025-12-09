@@ -95,9 +95,9 @@ const Pricing = () => {
             Monthly plans
           </p>
         </div> */}
-        <Row className="mt-5">
+        <Row className="mt-4 mt-md-5 g-3 g-md-4">
           {data.map((values, index) => (
-            <Col className="mt-4" lg={4} md={6} key={index}>
+            <Col xs={12} sm={6} lg={4} key={index}>
               <div
                 className={`${
                   index === 1 ? "bg-blue text-white" : "clr-black"

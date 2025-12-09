@@ -44,14 +44,14 @@ const Features = () => {
         >
           Specialized Features helping athletes reach their full potential
         </p>
-        <Row className="mt-3">
+        <Row className="mt-3 mt-md-4 mt-lg-5 g-3 g-md-4">
           {data.map((value, index) => {
             return (
-              <Col lg={4} sm={6} key={index} className="mt-4">
+              <Col xs={12} sm={6} lg={4} key={index}>
                 <div className="feature-card cursor-pointer p-4 h-100 d-flex flex-column">
                   <div>
                     <div className="card-image-circle d-flex align-items-center justify-content-center">
-                      <img className="card-image" src={value.img} alt="" />
+                      <img className="card-image" src={value.img} alt={value.head} />
                     </div>
                     <h4 className="ff-gotham-bold fs-30 mt-3">{value.head}</h4>
                   </div>
@@ -62,7 +62,6 @@ const Features = () => {
               </Col>
             );
           })}
-          <Col></Col>
         </Row>
       </Container>
     </div>

@@ -13,8 +13,10 @@ const SlammersHero = () => {
                     <img
                         src={SLogo}
                         alt="SLAMMERS"
-                        className="slammers-logo-text"/>
+                        className="slammers-logo-text"
+                    />
                 </div>
+
                 {/* Main Header */}
                 <div className="main-header">
                     <h1 className="slammer-title">Slammers FC</h1>
@@ -22,7 +24,6 @@ const SlammersHero = () => {
                 </div>
 
                 <div className="logo-sec">
-                    {/* Powered By Section */}
                     <div className="powered-section">
                         <div className="powered-label">Powered By</div>
                         <div className="powered-logos">
@@ -34,13 +35,13 @@ const SlammersHero = () => {
                         </div>
                     </div>
 
-                    {/* Welcome Section */}
                     <div className="welcome-section">
                         <div className="platform-kickoff">WELCOME TO INSPIRE</div>
                         <div className="platform-kickoff-1">PLATFORM KICK OFF</div>
                     </div>
                 </div>
             </div>
+
             {/* Right Side - Image Section */}
             <div className="image-section">
                 <img

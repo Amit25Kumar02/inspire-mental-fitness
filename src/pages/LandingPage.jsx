@@ -17,7 +17,7 @@ const LandingPage = () => {
   return (
     <div className="d-flex flex-column landing-page-body">
       <AppNav />
-      <AppHero />
+      {/* <AppHero /> */}
       <SlammersHero />
       <TrustedByCoaches />
       <Features />
