@@ -10,7 +10,7 @@
 
 @media (max-width: 1024px) {
   .logo-size {
-    width: 180px;
+    width: 160px;
     height: auto;
   }
 }
@@ -33,8 +33,9 @@
 
 @media (max-width: 1024px) {
   .app-navbar-bg-theme {
-    padding: 18px 6% !important;
+    padding: 18px 4% !important;
   }
+ 
 }
 
 @media (max-width: 768px) {
