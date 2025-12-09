@@ -6,6 +6,26 @@
   color: #fff;
 }
 
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.accordion-item:focus,
+.accordion-item:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
 @media (max-width: 1024px) {
   .faq-bg-theme {
     padding: 70px 6%;
@@ -144,12 +164,10 @@
   }
 }
 
-/* Remove weird bootstrap borders */
 .accordion {
   --bs-accordion-border-color: transparent;
 }
 
-/* Responsive Typography */
 @media (max-width: 1024px) {
   .fs-56 {
     font-size: 42px !important;
