@@ -35,10 +35,10 @@ const SlammersHero = () => {
                         </div>
                     </div>
 
-                    <div className="welcome-section">
+                    {/* <div className="welcome-section">
                         <div className="platform-kickoff">WELCOME TO INSPIRE</div>
                         <div className="platform-kickoff-1">PLATFORM KICK OFF</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

@@ -41,7 +41,7 @@
 }
 
 .slammers-logo {
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -51,7 +51,7 @@
 }
 
 .slammers-logo-text {
-    width: 280px;
+    width: 240px;
     /* margin-left: -60px; */
     /* border: 1px solid red; */
     height: auto;
@@ -76,7 +76,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     line-height: 1;
 }
 
@@ -135,7 +135,7 @@
 /* RIGHT IMAGE SECTION */
 .image-section {
     position: relative;
-    width: 400px;
+    width: 440px;
     height: 520px;
     /* border: 1px solid red; */
     z-index: 2;
@@ -174,19 +174,19 @@
 /* Large Desktop Screens */
 @media (min-width: 1400px) {
     .slammers-hero-wrapper {
-        gap: 100px;
+        gap: 200px;
         padding: 4% 12%;
     }
 
-    .slammers-logo-text{
+    /* .slammers-logo-text{
         margin-left: -60px;
-    }
+    } */
 }
 
 /* Laptop Screens */
 @media (max-width: 1200px) {
     .slammers-hero-wrapper {
-        gap: 60px;
+        gap: 100px;
         padding: 20px 6%;
     }
 

@@ -19,15 +19,15 @@ const LandingPage = () => {
       <AppNav />
       {/* <AppHero /> */}
       <SlammersHero />
-      <TrustedByCoaches />
-      <Features />
-      <AboutUs />
+      {/* <TrustedByCoaches /> */}
+      {/* <Features /> */}
+      {/* <AboutUs /> */}
       {/* <WhatTheyAreSaying /> */}
-      <TryInspire />
-      <Blogs />
-      <Pricing />
-      <Faqs />
-      <AppFooter />
+      {/* <TryInspire /> */}
+      {/* <Blogs /> */}
+      {/* <Pricing /> */}
+      {/* <Faqs /> */}
+      {/* <AppFooter /> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Appnav.css";
 import { Button, Container, ListGroup } from "react-bootstrap";
-import logo from "../../../assets/image/png/logo.png";
+import logo from "../../../assets/image/png/s-logo.png";
 import nextArrow from "../../../assets/image/png/nextArrow.png";
 import { List } from "antd";
 import { Link, useNavigate, useLocation } from "react-router-dom";
@@ -85,50 +85,50 @@ const AppNav = () => {
                 showNav === true ? "nav-show" : "nav-hidden"
               }`}
             >
-              <List.Item
+              {/* <List.Item
                 className="ff-gotham-normal fs_16"
                 onClick={() => setShowNav(false)}
               >
                 <a className="color_black4-1" href="/#Features">
                   Features
                 </a>
-              </List.Item>
+              </List.Item> */}
 
-              <List.Item
+              {/* <List.Item
                 className="ff-gotham-normal fs_16"
                 onClick={() => setShowNav(false)}
               >
                 <a className="color_black4-1" href="/about-us">
                   About Us
                 </a>
-              </List.Item>
+              </List.Item> */}
 
-              <List.Item
+              {/* <List.Item
                 className="ff-gotham-normal fs_16"
                 onClick={() => setShowNav(false)}
               >
                 <a className="color_black4-1" href="/#Pricing">
                   Pricing
                 </a>
-              </List.Item>
+              </List.Item> */}
 
-              <List.Item
+              {/* <List.Item
                 className="ff-gotham-normal fs_16"
                 onClick={() => setShowNav(false)}
               >
                 <a className="color_black4-1" href="/#Blog">
                   Blog
                 </a>
-              </List.Item>
+              </List.Item> */}
 
-              <List.Item
+              {/* <List.Item
                 className="ff-gotham-normal fs_16"
                 onClick={() => setShowNav(false)}
               >
                 <a className="color_black4-1" href="/contact-us">
                   Contact Us
                 </a>
-              </List.Item>
+              </List.Item> */}
 
               <List.Item className="d-lg-none">
                 <Button
@@ -159,7 +159,7 @@ const AppNav = () => {
                 </Button>
               </List.Item>
 
-              <List.Item>
+              <List.Item className="d-lg-none">
                 <LanguageDropdown />
               </List.Item>
             </ListGroup>
@@ -212,6 +212,7 @@ const AppNav = () => {
             ) : (
               <>
                 <div className="d-none d-lg-flex gap-2 align-items-center">
+                  <LanguageDropdown />
                   <Button
                     onClick={() => navigate("/sign-in")}
                     className="bg-transparent border-0 text-white ff-gotham-bold fs_16"
