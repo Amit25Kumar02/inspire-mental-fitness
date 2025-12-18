@@ -143,7 +143,7 @@ const AppNav = () => {
               </List.Item>
 
               <List.Item className="d-lg-none">
-                <Button
+                {/* <Button
                   onClick={() => {
                     navigate("/choose-role");
                     setShowNav(false);
@@ -156,7 +156,7 @@ const AppNav = () => {
                     src={nextArrow}
                     alt="nextArrow"
                   />
-                </Button>
+                </Button> */}
               </List.Item>
 
               <List.Item className="d-lg-none">
@@ -219,7 +219,7 @@ const AppNav = () => {
                   >
                     Login
                   </Button>
-                  <Button
+                  {/* <Button
                     onClick={() => navigate("/choose-role")}
                     className="btn-green-common text-white d-flex align-items-center gap-2 px-3 ff-gotham-bold fs_16"
                   >
@@ -229,7 +229,7 @@ const AppNav = () => {
                       src={nextArrow}
                       alt="nextArrow"
                     />
-                  </Button>
+                  </Button> */}
                 </div>
                 <Button
                   onClick={() => setShowNav(!showNav)}

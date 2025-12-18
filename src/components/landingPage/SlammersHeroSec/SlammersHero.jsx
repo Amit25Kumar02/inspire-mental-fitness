@@ -4,23 +4,17 @@ import inspireLogo from "../../../assets/image/png/logo.png";
 import footballGirl from "../../../assets/image/png/footballgirlshilloute.png";
 import SLogo from "../../../assets/image/png/s-logo.png"
 
+const API_URL = "https://prodapi.inspirementalfitness.com";
+
 const SlammersHero = () => {
     return (
         <section className="slammers-hero-wrapper">
             {/* Left Content - Text Section */}
             <div className="text-content">
-                <div className="slammers-logo">
-                    <img
-                        src={SLogo}
-                        alt="SLAMMERS"
-                        className="slammers-logo-text"
-                    />
-                </div>
-
                 {/* Main Header */}
                 <div className="main-header">
                     <h1 className="slammer-title">Slammers FC</h1>
-                    <h2 className="sub-title">Mental Fitness</h2>
+                    <h2 className="slammer-title-1">Mental Fitness</h2>
                 </div>
 
                 <div className="logo-sec">
@@ -34,11 +28,6 @@ const SlammersHero = () => {
                             />
                         </div>
                     </div>
-
-                    {/* <div className="welcome-section">
-                        <div className="platform-kickoff">WELCOME TO INSPIRE</div>
-                        <div className="platform-kickoff-1">PLATFORM KICK OFF</div>
-                    </div> */}
                 </div>
             </div>
 

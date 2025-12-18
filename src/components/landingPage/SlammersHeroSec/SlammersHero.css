@@ -67,21 +67,28 @@
     line-height: 1;
 }
 
+.slammer-title-1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
 .sub-title {
     font-size: 72px;
     font-weight: 700;
     opacity: 0.65;
     margin: 0px 0 60px;
-    background: linear-gradient(270deg, #009345 72.08%, #0071bd 88.41%);
+    color: white;
+    /* background: linear-gradient(270deg, #009345 72.08%, #0071bd 88.41%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
     line-height: 1;
 }
 
 .logo-sec {
-    margin-top: 10px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
     gap: 90px;
@@ -178,21 +185,19 @@
         padding: 4% 12%;
     }
 
-    /* .slammers-logo-text{
-        margin-left: -60px;
-    } */
+    .text-content {
+        margin-top: -10px;
+    }
 }
 
 /* Laptop Screens */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .slammers-hero-wrapper {
         gap: 100px;
         padding: 20px 6%;
     }
 
-    /* .slammers-logo-text {
-        margin-left: -60px;
-    } */
+
 
     .player-silhouette {
         height: 450px;
@@ -215,6 +220,11 @@
         font-size: 68px;
     }
 
+    .slammer-title-1 {
+        font-size: 62px;
+        margin-bottom: 50px;
+    }
+
     .sub-title {
         font-size: 62px;
         margin-bottom: 50px;
@@ -222,6 +232,7 @@
 
     .logo-sec {
         gap: 30px;
+        margin-top: 100px;
     }
 }
 
@@ -269,6 +280,11 @@
         font-size: 60px;
     }
 
+    .slammer-title-1 {
+        font-size: 54px;
+        margin-bottom: 40px;
+    }
+
     .sub-title {
         font-size: 54px;
         margin-bottom: 40px;
@@ -288,6 +304,11 @@
 @media (max-width: 768px) {
     .slammer-title {
         font-size: 48px;
+    }
+
+    .slammer-title-1 {
+        font-size: 42px;
+        margin-bottom: 30px;
     }
 
     .sub-title {
@@ -343,6 +364,11 @@
 
     .slammer-title {
         font-size: 40px;
+    }
+
+    .slammer-title-1 {
+        font-size: 36px;
+        margin-bottom: 25px;
     }
 
     .sub-title {
@@ -413,6 +439,10 @@
         font-size: 36px;
     }
 
+    .slammer-title-1 {
+        font-size: 32px;
+    }
+
     .sub-title {
         font-size: 32px;
     }
@@ -465,6 +495,10 @@
         font-size: 32px;
     }
 
+    .slammer-title-1 {
+        font-size: 28px;
+    }
+
     .sub-title {
         font-size: 28px;
     }
@@ -490,7 +524,7 @@
 }
 
 /* Landscape Orientation for Mobile */
-@media (max-height: 600px) and (orientation: landscape) {
+@media (max-height: 450px) and (orientation: landscape) {
     .slammers-hero-wrapper {
         min-height: 400px;
         padding: 30px 5%;
@@ -503,6 +537,11 @@
 
     .slammer-title {
         font-size: 40px;
+    }
+
+    .slammer-title-1 {
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
     .sub-title {
